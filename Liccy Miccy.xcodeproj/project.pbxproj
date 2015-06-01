@@ -14,6 +14,9 @@
 		089BC4701B1BB333009DA0C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089BC46F1B1BB333009DA0C1 /* Images.xcassets */; };
 		089BC4731B1BB333009DA0C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089BC4711B1BB333009DA0C1 /* LaunchScreen.xib */; };
 		089BC47F1B1BB333009DA0C1 /* Liccy_MiccyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089BC47E1B1BB333009DA0C1 /* Liccy_MiccyTests.swift */; };
+		089BC4891B1BBB80009DA0C1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089BC4881B1BBB80009DA0C1 /* GameScene.swift */; };
+		089BC48B1B1BC3FC009DA0C1 /* TLMovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089BC48A1B1BC3FC009DA0C1 /* TLMovingGround.swift */; };
+		089BC48D1B1BD8B9009DA0C1 /* TLHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089BC48C1B1BD8B9009DA0C1 /* TLHero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		089BC4781B1BB333009DA0C1 /* Liccy MiccyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Liccy MiccyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		089BC47D1B1BB333009DA0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		089BC47E1B1BB333009DA0C1 /* Liccy_MiccyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liccy_MiccyTests.swift; sourceTree = "<group>"; };
+		089BC4881B1BBB80009DA0C1 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		089BC48A1B1BC3FC009DA0C1 /* TLMovingGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLMovingGround.swift; sourceTree = "<group>"; };
+		089BC48C1B1BD8B9009DA0C1 /* TLHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				089BC4661B1BB332009DA0C1 /* AppDelegate.swift */,
+				089BC4881B1BBB80009DA0C1 /* GameScene.swift */,
+				089BC48C1B1BD8B9009DA0C1 /* TLHero.swift */,
+				089BC48A1B1BC3FC009DA0C1 /* TLMovingGround.swift */,
 				089BC4681B1BB333009DA0C1 /* art.scnassets */,
 				089BC46A1B1BB333009DA0C1 /* GameViewController.swift */,
 				089BC46C1B1BB333009DA0C1 /* Main.storyboard */,
@@ -164,6 +173,7 @@
 				TargetAttributes = {
 					089BC4601B1BB332009DA0C1 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5688NLMS22;
 					};
 					089BC4771B1BB333009DA0C1 = {
 						CreatedOnToolsVersion = 6.4;
@@ -216,7 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089BC4891B1BBB80009DA0C1 /* GameScene.swift in Sources */,
 				089BC46B1B1BB333009DA0C1 /* GameViewController.swift in Sources */,
+				089BC48D1B1BD8B9009DA0C1 /* TLHero.swift in Sources */,
+				089BC48B1B1BC3FC009DA0C1 /* TLMovingGround.swift in Sources */,
 				089BC4671B1BB332009DA0C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Liccy Miccy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Liccy Miccy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
